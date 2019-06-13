@@ -27,6 +27,14 @@ namespace SimpleNetCoreCalculator.Controllers
             {
                 model.Result = model.NumberA - model.NumberB;
             }
+            else if (model.OperationType == OperationType.Multiplication)
+            {
+                model.Result = model.NumberA * model.NumberB;
+            }
+            else if (model.OperationType == OperationType.Division)
+            {
+                model.Result = model.NumberA / model.NumberB;
+            }
             return View(model);
         }
 
