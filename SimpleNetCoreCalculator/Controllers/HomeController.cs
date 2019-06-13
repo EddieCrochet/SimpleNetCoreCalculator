@@ -20,7 +20,13 @@ namespace SimpleNetCoreCalculator.Controllers
         public IActionResult Index(Operation model)
         {
             if (model.OperationType == OperationType.Addition)
+            {
                 model.Result = model.NumberA + model.NumberB;
+            }
+            else if (model.OperationType == OperationType.Subtraction)
+            {
+                model.Result = model.NumberA - model.NumberB;
+            }
             return View(model);
         }
 
