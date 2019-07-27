@@ -1,13 +1,12 @@
-﻿body{
-    display:flex;
-    align-content:center;
-}
-
+﻿
 .row {
     margin-top:20px;
     margin-bottom:20px;
     display:flex;
     justify-content:space-between;
+    padding:20px;
+    border:2px solid chartreuse;
+    border-radius:20px;
 }
 
 form {
@@ -17,5 +16,6 @@ form {
     justify-content:center;
     background-color: red;
     border-radius: 20px;
+    border:4px solid purple;
 }
 

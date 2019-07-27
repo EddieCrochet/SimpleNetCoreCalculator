@@ -5,28 +5,31 @@
 </head>
 
 
-<form asp-controller="Home" asp-action="Index" method="post">
-    <div class="form-group">
-        <div class="row">
-            <label asp-for="NumberA"></label>
-            <input type="number" step="any" asp-for="NumberA" />
+<div class="divForm">
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <div class="form-group">
+            <div class="row">
+                <label asp-for="NumberA"></label>
+                <input type="number" step="any" asp-for="NumberA" />
+            </div>
+            <div class="row">
+                <label asp-for="NumberB"></label>
+                <input type="number" step="any" asp-for="NumberB" />
+            </div>
+            <div class="row">
+                <label asp-for="OperationType"></label>
+                <select asp-for="OperationType" asp-items="Html.GetEnumSelectList<OperationType>()">
+                    <option selected="selected" value="">Select</option>
+                </select>
+            </div>
+            <div class="row">
+                <label asp-for="Result"></label>
+                <input type="number" disabled="disabled" asp-for="Result" />
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" asp-action="Index" />
+            </div>
         </div>
-        <div class="row">
-            <label asp-for="NumberB"></label>
-            <input type="number" step="any" asp-for="NumberB"/>
-        </div>
-        <div class="row">
-            <label asp-for="OperationType"></label>
-            <select asp-for="OperationType" asp-items="Html.GetEnumSelectList<OperationType>()">
-                <option selected="selected" value="">Select</option>
-            </select>
-        </div>
-        <div class="row">
-            <label asp-for="Result"></label>
-            <input type="number"  disabled="disabled" asp-for="Result" />
-        </div>
-        <div class="row">
-            <input type="submit" value="Submit" asp-action="Index" />
-        </div>
-    </div>
-</form>  
+    </form>
+</div>
+
