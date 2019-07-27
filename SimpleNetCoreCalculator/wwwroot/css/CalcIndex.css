@@ -1,10 +1,21 @@
-﻿.row {
-    margin-top:10px;
-    margin-bottom:10px;
+﻿body{
+    display:flex;
+    align-content:center;
 }
 
-form{
-    margin: 0 auto;
-    width: 10%;
+.row {
+    margin-top:20px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+form {
+    margin-top:20px;
+    width:40%;
+    display:flex;
+    justify-content:center;
+    background-color: red;
+    border-radius: 20px;
 }
 
