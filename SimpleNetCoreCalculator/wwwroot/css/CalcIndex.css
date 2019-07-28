@@ -20,9 +20,10 @@ form {
     border:4px solid purple;
 }
 
-@media(max-width:1000px){
+@media(max-width:991px){
     form{
         background-color:burlywood;
+        width:75%;
     }
 }
 
