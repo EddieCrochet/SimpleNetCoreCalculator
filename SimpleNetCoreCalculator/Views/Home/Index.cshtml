@@ -13,18 +13,16 @@
             </div>
             <div class="row">
                 <label asp-for="NumberA"></label>
+                <label asp-for="OperationType"></label>
                 <label asp-for="NumberB"></label>
-                
+
             </div>
             <div class="row">
                 <input type="number" step="any" asp-for="NumberA" />
-                <input type="number" step="any" asp-for="NumberB" />
-            </div>
-            <div class="row">
-                <label asp-for="OperationType"></label>
                 <select asp-for="OperationType" asp-items="Html.GetEnumSelectList<OperationType>()">
                     <option selected="selected" value="">Select</option>
                 </select>
+                <input type="number" step="any" asp-for="NumberB" />
             </div>
             <div class="row">
                 <label asp-for="Result"></label>
